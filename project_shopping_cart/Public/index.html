@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>display</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery.js"></script>
+    <script src="cartscript.js"></script>
+    <style>
+        #userCart{
+            height:500px;
+             width:500px; 
+            background-color: aliceblue;
+            position: fixed;
+            top: 57px;
+            left: 781px;
+            display: none;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container" style= "background-image: linear-gradient(black,white)">
+        <div class="row p-3 nav" id="nav" >
+            <div class="col-11 ">
+                <h1 style= "color: aliceblue">CATALOUGE</h1>
+            </div>
+            <div class="col-1 ">
+                <button class="btn btn-dark" id="accCart">C</button>
+            </div>
+        </div> 
+        <div id="card-group" class="card-group mt-5">
+            <div class="card text-white bg-dark mb-3" style= "max-width: 18rem">
+                <img src="https://via.placeholder.com/1" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting.</p>
+                    <input type="number" name="" id="quant" class= "form-control">
+                    <button type="submit" class="btn-sm btn-light mt-1" id="addCart">ADD</button>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+        <div id= "userCart" >
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+</body>
+</html>
